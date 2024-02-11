@@ -1,0 +1,10 @@
+1. Приведем из 1НФ в 2НФ значения таблицы customers:
+- gender -> M|F|U
+- job_industry_category['n\a'] -> Null
+- deceased_indicator -> True/False
+- owns_car -> True/False
+
+2. Разделим таблицу transaction на две таблицы (2НФ в 3НФ). Отдельно выделим информацию о товаре
+По связке [brand, product_line, product_class, product_size, list_price, standard_cost] создаем уникальный ключ в таблице transaction
+Соответственно создаем новую таблицу products с информацией о проданных товарах.
+
